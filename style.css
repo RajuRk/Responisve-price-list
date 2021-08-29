@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 95%);
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .8em;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    margin-bottom: 5em;
+}
+.flex-box{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+.box{
+    padding: 30px;
+}
+.box-one{
+   background-color: hsl(31, 77%, 52%);
+   border-radius: 7px 0px 0px 7px;
+}
+.box-one button{
+   color: hsl(31, 77%, 52%);
+}
+.box-two{
+  background-color: hsl(184, 100%, 22%);
+}
+.box-two button{
+  color: hsl(184, 100%, 22%);
+}
+.box-three{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 7px 7px 0px;
+}
+.box-three button{
+  color: hsl(179, 100%, 13%);  
+}
+button{
+  padding: 10px 21px;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid #fff;
+  border-radius: 20px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+button:hover{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+@media only screen and (max-width: 600px){
+  .flex-box{
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+  .box-one{
+    border-radius: 7px 7px 0px 0px;
+  }
+  .box-three{
+    border-radius: 0px 0px 7px 7px;
+  }
+}
